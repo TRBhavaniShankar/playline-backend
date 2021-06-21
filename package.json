@@ -1,0 +1,23 @@
+{
+  "name": "playline-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TRBhavaniShankar/playline-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TRBhavaniShankar/playline-backend/issues"
+  },
+  "homepage": "https://github.com/TRBhavaniShankar/playline-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
