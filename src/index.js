@@ -14,18 +14,19 @@ app.get('/', (req, res) => {
 })
 
 app.get('/getPlayersList', (req, res) => {
-    // var playersListJson = 
-    let url = "https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json";
-    let settings = { method: "Get" };
 
-    
+  // JSON URL to hit
+  let url = "https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json";
+  
+  // using get method
+  let settings = { method: "Get" };
 
-    fetch(url, settings)
-      .then(res => res.json())
-      .then((json) => {
-          res.send(json)
-      });
-    
+  // fetch the data from json
+  fetch(url, settings)
+    .then(res => res.json())
+    .then((json) => {
+        res.send(json)
+    });
     
   })
 
