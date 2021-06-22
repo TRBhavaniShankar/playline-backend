@@ -5,7 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "build": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -16,10 +19,13 @@
   "bugs": {
     "url": "https://github.com/TRBhavaniShankar/playline-backend/issues"
   },
-  "homepage": "https://github.com/TRBhavaniShankar/playline-backend#readme",
+  "homepage": "https://github.com/TRBhavaniShankar/playline-backend",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
